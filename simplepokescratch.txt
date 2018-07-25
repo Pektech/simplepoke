@@ -1,2 +1,2 @@
-1 . Models simple mongdb, pokemon, best recipe description
+1 . Models simple sqlite, pokemon, best recipe description
 2
