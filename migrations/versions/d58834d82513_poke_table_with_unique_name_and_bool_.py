@@ -1,8 +1,8 @@
-"""Pokes table
+"""Poke table with unique name and bool for if recipes work
 
-Revision ID: 2f07620d920b
+Revision ID: d58834d82513
 Revises: 
-Create Date: 2018-07-25 08:32:23.049175
+Create Date: 2018-07-25 10:37:12.855371
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '2f07620d920b'
+revision = 'd58834d82513'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -24,10 +24,11 @@ def upgrade():
     sa.Column('best_recipe', sa.String(length=100), nullable=True),
     sa.Column('percent', sa.Integer(), nullable=True),
     sa.Column('info', sa.Text(), nullable=True),
+    sa.Column('attracted', sa.Boolean(), nullable=True),
     sa.PrimaryKeyConstraint('id')
     )
     op.create_index(op.f('ix_pokes_best_recipe'), 'pokes', ['best_recipe'], unique=False)
-    op.create_index(op.f('ix_pokes_name'), 'pokes', ['name'], unique=False)
+    op.create_index(op.f('ix_pokes_name'), 'pokes', ['name'], unique=True)
     # ### end Alembic commands ###
 
 
