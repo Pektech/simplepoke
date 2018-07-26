@@ -1,2 +1,2 @@
 1 . Models simple sqlite, pokemon, best recipe description
-2
+2 pip install 'cryptography<2.2' fixes get error with flask_ask
