@@ -9,6 +9,7 @@ class Pokes(db.Model):
     percent = db.Column(db.Integer)
     info = db.Column(db.Text)
     attracted = db.Column(db.Boolean)
+    recipe_type = db.Column(db.String(100))
 
 
     def __repr__(self):
