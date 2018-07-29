@@ -4,8 +4,8 @@ from flask import url_for, render_template, flash, redirect
 from .models import Pokes
 from sqlalchemy.exc import IntegrityError
 
-@app.route('/')
-@app.route('/index')
+@app.route('/test')
+#@app.route('/index')
 def index():
     return 'hello pek and monkey'
 

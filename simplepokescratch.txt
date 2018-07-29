@@ -2,5 +2,8 @@
 2 pip install 'cryptography<2.2' fixes get error with flask_ask
 
 
+https://1o1hopgh46.execute-api.us-east-1.amazonaws.com/dev
+
+https://1o1hopgh46.execute-api.us-east-1.amazonaws.com/dev
 
 Bulbasaur

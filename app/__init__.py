@@ -10,6 +10,6 @@ app.config.from_object(Config)
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 bootstrap = Bootstrap(app)
-ask = Ask(app, '/simplepoke')
+ask = Ask(app, '/')
 
 from app import routes, models, alexa
