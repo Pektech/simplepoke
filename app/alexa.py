@@ -39,7 +39,7 @@ def find_recipe(Pokemon):
                                                 make_choice,
                                                 poke_query.info)
         ask_session.attributes['last_speech'] = speech_output
-        return question(speech_output)
+        return statement(speech_output)
 
 
 @ask.intent('AMAZON.RepeatIntent')
